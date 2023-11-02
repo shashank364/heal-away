@@ -1,0 +1,500 @@
+.content-container{
+  font-family: 'Montserrat', sans-serif;
+}
+.logo-placement{
+  padding: 1rem;
+  align-items: center;
+  height: 4rem;
+  max-width: 10rem;;
+}
+.home-logo {
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+.landing-image {
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.landing-image img {
+  width: 100%;
+  height: 42rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a{
+  font-size: 1rem;
+
+}
+.desktop-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.container-local {
+  // height: 100vh;
+}
+
+.sidenav {
+  width: 70%;
+}
+
+.mat-list-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+.mat-drawer-content{
+  position: relative;
+  z-index: 1;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: black;
+}
+
+.text-center{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 36px;
+}
+.specialities-section {
+  text-align: center;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+}
+
+.specialty-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.specialty-item img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+#Cardiology{
+ background:url('../../assets/Images/Cardiology.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-position: 10% 20% !important;
+ background-size: 110%;
+}
+#Neurology{
+  background: url('../../assets/Images/Neurology.webp');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 48% 20% !important;
+  background-size: 144%;
+}
+ #Oncology{
+  background: url('../../assets/Images/Oncology.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 20% !important;
+  background-size: 110%;
+ }
+ #Orthopedics{
+  background: url('../../assets/Images/Orthology.webp');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 20% !important;
+  background-size: 120%;
+ }
+ #ENT{
+  background: url('../../assets/Images/ENT.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+ }
+ #Dental{
+  background: url('../../assets/Images/Dental.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+ }
+ #Pediatric{
+  background: url('../../assets/Images/Pediatric.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+ }
+ #RoboticSurgery{
+  background: url('../../assets/Images/RoboticSurgery.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+}
+#Geriatric{
+  background: url('../../assets/Images/Geriatric.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+}
+#Gastroenterology{
+  background: url('../../assets/Images/Gastronology.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+}
+#PlasticSurgery{
+  background: url('../../assets/Images/Surgery.png');
+  background-repeat: no-repeat;
+  background-position: 20% 0% !important;
+  background-size: 200%;
+}
+#Transplants{
+  background: url('../../assets/Images/Nephrology.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10% 0% !important;
+  background-size: 110%;
+}
+.content-color{
+  color:white;
+}
+.lorem-section {
+  flex: 1;
+
+  position: relative; /* Add this for positioning */
+}
+
+.lorem-content {
+  padding: 10rem;
+  width: 30%;
+}
+.content-position{
+  position: relative;
+  right: -50%;
+}
+.lorem-content h2{
+  font-size: 1.8rem;
+}
+
+
+/* Optional CSS Styles for Carousel */
+.carousel {
+  width: 100%;
+  // height: 60vh; /* Adjust the height as needed */
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+h1{
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* Style for the Mission and Vision Section */
+.mission-vision-section {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+/* Style for the Mission and Vision Content */
+.mission-vision-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style for the Mission and Vision Text */
+.mission-vision-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Style for Heading (h2) in Mission and Vision Text */
+.mission-vision-text h2 {
+  // color: #0066cc;
+  color: black;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Style for Paragraph (p) in Mission and Vision Text */
+.mission-vision-text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Style for Highlighted Text */
+.mission-vision-text .highlight {
+  color: #0066cc;
+  font-weight: bold;
+  font-size: 24px;
+  background: linear-gradient(to right, #0066cc 0%, #3399ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Animation for Mission and Vision Text */
+.mission-vision-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for the floating scroll-to-top button */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Style for the SVG image inside the button */
+.scroll-to-top-button img {
+  width: 20px; /* Adjust the size of the SVG image as needed */
+  height: 20px;
+  vertical-align: middle;
+}
+
+.enquiry-form-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #e1e7ee;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.enquiry-form-button img {
+  width: 20px; /* Adjust the size of the SVG image as needed */
+  height: 20px;
+  vertical-align: middle;
+}
+.dancing-button {
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+#serviceSection {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  text-align: center;
+  width: 220px;
+}
+
+.service-item img {
+  width: 80px; /* Adjust the icon size as needed */
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.footer-section {
+  background-color: #829ca0;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 30px; /* Increase the font size as needed */
+  text-decoration: none;
+}
+/* Styles for the enquiry label */
+.enquiry-label {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%) rotate(-180deg);
+  background-color: #416ebccf;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 18vh;
+  width: 0px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  display: inline-table;
+  font-size: 2rem;
+}
+
+.enquiry-label span{
+  transform: rotateZ(270deg);
+}
+.about-healaway {
+  background-color: #dedee2;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-text, .closing-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel-box {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.carousel {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #416ebccf; /* Change to your desired heading color */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc; /* Change to your desired dot color */
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #007bff; /* Change to your desired active dot color */
+}
+
+.section-header {
+  text-align: center;
+  font-weight: bold; /* Optional: Adjust the font weight */
+  color: black; /* Optional: Adjust the text color */
+  // border-bottom: 3px solid #333; /* Add an underline with your desired color and thickness */
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: 601px) {
+  .mobile-toolbar{
+    display: none;
+  }
+}
+
