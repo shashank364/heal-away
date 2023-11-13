@@ -1,3 +1,11 @@
+/* Add this to your component's styles or global styles.css */
+.sticky-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: white; /* Adjust the background color as needed */
+}
+
 .content-container{
   font-family: 'Montserrat', sans-serif;
 }
@@ -48,9 +56,6 @@ a{
   flex-grow: 1;
 }
 
-.container-local {
-  // height: 100vh;
-}
 
 .sidenav {
   width: 70%;
@@ -65,8 +70,8 @@ a{
 
 
 .mat-drawer-content{
-  position: relative;
   z-index: 1;
+  margin-top: 2px;
 }
 
 .text-container {
@@ -75,18 +80,6 @@ a{
   left: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.title {
-  font-size: 3rem;
-  color: black;
-  margin-bottom: 1rem;
-  text-align: start;
-}
-
-.subtitle {
-  font-size: 2rem;
-  color: black;
 }
 
 .text-center{
@@ -117,112 +110,6 @@ a{
   height: 100px;
   margin-bottom: 10px;
 }
-
-
-#Cardiology{
- background:url('../../assets/Images/Cardiology.jpg');
- background-repeat: no-repeat;
- background-position: center;
- background-position: 10% 20% !important;
- background-size: 110%;
-}
-#Neurology{
-  background: url('../../assets/Images/Neurology.webp');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 48% 20% !important;
-  background-size: 144%;
-}
- #Oncology{
-  background: url('../../assets/Images/Oncology.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 20% !important;
-  background-size: 110%;
- }
- #Orthopedics{
-  background: url('../../assets/Images/Orthology.webp');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 20% !important;
-  background-size: 120%;
- }
- #ENT{
-  background: url('../../assets/Images/ENT.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
- }
- #Dental{
-  background: url('../../assets/Images/Dental.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
- }
- #Pediatric{
-  background: url('../../assets/Images/Pediatric.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
- }
- #RoboticSurgery{
-  background: url('../../assets/Images/RoboticSurgery.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
-}
-#Geriatric{
-  background: url('../../assets/Images/Geriatric.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
-}
-#Gastroenterology{
-  background: url('../../assets/Images/Gastronology.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
-}
-#PlasticSurgery{
-  background: url('../../assets/Images/Surgery.png');
-  background-repeat: no-repeat;
-  background-position: 20% 0% !important;
-  background-size: 200%;
-}
-#Transplants{
-  background: url('../../assets/Images/Nephrology.png');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-position: 10% 0% !important;
-  background-size: 110%;
-}
-.content-color{
-  color:white;
-}
-.lorem-section {
-  flex: 1;
-
-  position: relative; /* Add this for positioning */
-}
-
-.lorem-content {
-  padding: 10rem;
-  width: 30%;
-}
-.content-position{
-  position: relative;
-  right: -50%;
-}
-.lorem-content h2{
-  font-size: 1.8rem;
-}
-
 
 /* Optional CSS Styles for Carousel */
 .carousel {
@@ -354,7 +241,7 @@ h1{
 }
 
 #serviceSection {
-  background-color: #f9f9f9;
+  background-color: #dedee2;
   padding: 40px 0;
   text-align: center;
 }
@@ -485,10 +372,10 @@ p {
 
 .section-header {
   text-align: center;
-  font-weight: bold; /* Optional: Adjust the font weight */
-  color: black; /* Optional: Adjust the text color */
-  // border-bottom: 3px solid #333; /* Add an underline with your desired color and thickness */
   display: inline-block;
+  color: black;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 

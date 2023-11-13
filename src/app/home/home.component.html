@@ -1,5 +1,5 @@
 <!-- For desktop -->
-<mat-toolbar class="desktop-toolbar">
+<mat-toolbar class="desktop-toolbar" [ngClass]="{'sticky-toolbar': 'true'}">
   <img class="logo-placement" src="../../assets/icons/heal_away_logo .png" (click)="onLogoClick()">
   <div>
     <a class="home-logo" (click)="onLogoClick()">Heal Away</a>
@@ -12,7 +12,7 @@
 </mat-toolbar>
 
 <!-- For mobile -->
-<mat-toolbar class="mobile-toolbar">
+<mat-toolbar class="mobile-toolbar" [ngClass]="{'sticky-toolbar': 'true'}">
   <img class="logo-placement" src="../../assets/icons/heal_away_logo .png" (click)="onLogoClick()">
   <div>
     <a class="home-logo" (click)="onLogoClick()">Heal Away</a>
@@ -56,7 +56,7 @@
 
       <!-- Why HealAway -->
       <section id="aboutsection" class="about-healaway">
-        <h1 class="text-center b section-header">Why HealAway?</h1>
+        <h1 class="text-center  section-header">Why HealAway?</h1>
         <p class="intro-text">{{ introText }}</p>
         <div class="carousel-box">
           <div class="carousel">
@@ -68,14 +68,8 @@
           </div>
         </div>
         <p class="closing-text">{{ closingText }}</p>
-
       </section>
-
-
-
-
-
-
+      
 
       <!-- Specialities -->
       <div id="specialitiesSection" class="specialities-section">
@@ -89,161 +83,6 @@
           </div>
         </div>
       </div>
-
-
-      <section class="lorem-section" id="Cardiology">
-        <div class="lorem-content content-color">
-          <h2>Cardiology</h2>
-          <p>
-            Our Cardiology department is committed to caring for your heart health. With cutting-edge technology and a team of experienced cardiologists, we offer personalized treatment plans to keep your heart in top shape. From preventive screenings to advanced cardiac interventions, we have you covered. Trust us to take care of your heart, because we care about you.
-          </p>
-          <p>
-            When it comes to your heart, we leave no stone unturned. Our team of experts is dedicated to providing compassionate care and the latest medical advancements in Cardiology. With us, you're not just a patient; you're family. Your heart is in safe hands with our skilled and caring specialists.
-          </p>
-        </div>
-      </section>
-      <section class="lorem-section" id="Oncology">
-        <div class="lorem-content content-position">
-          <h2>Oncology</h2>
-          <p>
-            Fighting cancer requires a strong team by your side, and we are that team. Our Oncology specialists are dedicated to providing comprehensive and personalized cancer care. From diagnosis to treatment, we use the latest advancements in Oncology to give you the best chance at beating cancer.
-          </p>
-          <p>
-            At our Oncology center, we believe in a holistic approach to cancer care. We understand that every patient's journey is unique, and we are here to support you every step of the way. Our team of compassionate caregivers and cutting-edge technology will ensure you receive the best care possible, both physically and emotionally.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Neurology" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content">
-          <h2>Neurology</h2>
-          <p>
-            Unlock the mysteries of your brain with our Neurology experts. From headaches to seizures, our specialists are trained to diagnose and treat a wide range of neurological conditions. We combine compassion with cutting-edge technology to ensure you receive the best care possible.
-          </p>
-          <p>
-            At our Neurology center, we understand the complexity of the brain and nervous system. Our expert neurologists are dedicated to diagnosing and treating a wide range of neurological conditions. From headaches to movement disorders, we're here to listen to your concerns and provide compassionate care. Let us be your partners in promoting brain health and well-being.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Transplants">
-        <div class="lorem-content content-position">
-          <h2>Transplants</h2>
-
-          <p>
-            Transplantation offers a new lease on life, and our Transplant center is at the forefront of life-saving procedures. Whether it's a kidney, liver, or heart transplant, our skilled surgeons perform these complex surgeries with utmost precision and care.
-          </p>
-          <p>
-            At our Transplant center, we understand the challenges faced by patients and their families. Our multidisciplinary team provides holistic support throughout the transplant journey, ensuring the best possible outcomes. Let us be the guiding light as you embark on a transformative and life-saving experience.
-          </p>
-        </div>
-      </section>
-
-
-
-
-      <section class="lorem-section" id="PlasticSurgery" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content content-color">
-          <h2>Plastic Surgery</h2>
-
-          <p>
-            Embrace the best version of yourself with our Plastic Surgery services. Whether you're seeking cosmetic enhancements or reconstructive procedures, our skilled surgeons will deliver natural-looking results that enhance your beauty and boost your confidence.
-          </p>
-          <p>
-            At our Plastic Surgery center, we believe in the power of self-expression and self-empowerment. Our team of compassionate surgeons will listen to your goals and work with you to achieve the look you desire. From facelifts to breast augmentations, we offer a range of procedures to help you look and feel your best.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="RoboticSurgery">
-        <div class="lorem-content content-position">
-          <h2>Robotic Surgery</h2>
-
-          <p>
-            Welcome to the future of surgery with our Robotic Surgery advancements. Our skilled robotic surgeons use state-of-the-art technology to perform complex procedures with precision and minimal invasiveness. Experience faster recovery times and reduced scarring with our robotic-assisted surgeries.
-          </p>
-          <p>
-            At our Robotic Surgery center, we are pioneers in medical innovation. Our team of robotic surgeons undergo extensive training to master this advanced technology, ensuring you receive the best possible care. Trust in our expertise, and let us guide you towards a smoother and more efficient surgical journey.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Geriatric" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content content-color">
-          <h2>Geriatric</h2>
-
-          <p>
-            Aging gracefully is possible with our Geriatric care services. Our team of geriatricians is dedicated to supporting seniors' health and well-being, offering personalized care plans to address their unique needs and challenges.
-          </p>
-          <p>
-            At our Geriatric center, we believe that age should not limit one's quality of life. Our comprehensive geriatric assessments and management strategies aim to improve seniors' overall health and independence. We understand the value of experience and wisdom, and we are committed to providing the care and respect our seniors deserve.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Gastroenterology" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content content-position">
-          <h2>Gastroenterology</h2>
-
-          <p>
-            Indulge in your favorite flavors without worry, thanks to our Gastroenterology experts. From digestive disorders to liver diseases, our gastroenterologists provide comprehensive care to keep your digestive system in balance. Trust us to get to the root of the issue and provide effective solutions.
-          </p>
-          <p>
-            At our Gastroenterology center, we understand the importance of gut health in overall well-being. Our experienced gastroenterologists are equipped to handle a wide range of gastrointestinal issues, ensuring you get the relief and support you need. Say hello to a happier tummy and a healthier you with our compassionate care.
-          </p>
-        </div>
-      </section>
-      <section class="lorem-section" id="ENT">
-        <div class="lorem-content content-color">
-          <h2>ENT</h2>
-
-          <p>
-            Breathe easy with our Ear, Nose, and Throat (ENT) experts. From sinus issues to hearing problems, our ENT specialists are here to diagnose and treat a wide range of conditions. Enjoy clear communication and improved hearing with our cutting-edge treatments and solutions.
-          </p>
-          <p>
-            At our ENT center, we believe in enhancing your quality of life through better hearing and improved respiratory health. Our dedicated team of specialists uses the latest technology to diagnose and address your ENT concerns effectively. Say goodbye to discomfort and hello to a world of clearer communication and vibrant health.
-          </p>
-        </div>
-      </section>
-
-
-
-      <section class="lorem-section" id="Orthopedics" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content content-position">
-          <h2>Orthopedics</h2>
-          <p>
-            Move freely and live life to the fullest with our Orthopedic experts. Whether you're facing joint pain or a sports injury, we are here to help you get back on your feet. Our team of skilled surgeons and physical therapists will create a personalized treatment plan to address your unique needs.
-          </p>
-          <p>
-            At our Orthopedics center, we understand the importance of mobility and independence. That's why we offer a wide range of services, from minimally invasive procedures to advanced joint replacement surgeries. Our goal is to help you regain your active lifestyle and enjoy life without limitations.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Pediatric">
-        <div class="lorem-content content-color">
-          <h2>Pediatric</h2>
-          <p>
-            Our little patients deserve the best care, and that's what we provide at our Pediatric center. From newborns to teenagers, we specialize in the unique medical needs of children. Our team of pediatricians and pediatric specialists are here to support your child's growth and development.
-          </p>
-          <p>
-            At our Pediatric center, we know that children are not just small adults. That's why we take a gentle and playful approach to healthcare, ensuring your child feels safe and comfortable during their visits. Our kid-friendly environment and caring staff will make each visit a positive and memorable experience for your little one.
-          </p>
-        </div>
-      </section>
-
-      <section class="lorem-section" id="Dental" style="background:url(../../assets/Images/Nephrology.png) left inherit">
-        <div class="lorem-content content-position">
-          <h2>Dental</h2>
-
-          <p>
-            Smile with confidence and maintain oral health with our Dental services. From routine check-ups to advanced dental procedures, our skilled dentists are here to ensure your teeth and gums stay in optimal condition.
-          </p>
-          <p>
-            At our Dental center, we believe that a healthy smile is a gateway to overall well-being. Our gentle and caring approach to dental care ensures that you feel comfortable and relaxed during your visit. Experience the joy of a healthy and radiant smile with our comprehensive dental services.
-          </p>
-        </div>
-      </section>
 
       <!-- Service Section -->
       <section id="serviceSection">
@@ -285,13 +124,17 @@
     <!-- Image Container -->
 
 <!-- Floating button for scrolling to top -->
-<button class="scroll-to-top-button" (click)="scrollToTop()"><img src="../../../assets/icons/arrow-up-solid.svg"></button>
+<!-- <button class="scroll-to-top-button" (click)="scrollToTop()"><img src="../../../assets/icons/arrow-up-solid.svg"></button> -->
+<button class="scroll-to-top-button" (click)="onEnquiryFormOpen()" [ngClass]="{'dancing-button': !isEnquiryFormOpen}">
+  <img src="../../assets/icons/info-circle-solid.svg">
+</button>
 <!-- <button class="enquiry-form-button" (click)="onEnquiryFormOpen()" [ngClass]="{'dancing-button': !isEnquiryFormOpen}">
   <img src="../../assets/icons/info-circle-solid.svg">
 </button> -->
-<div class="enquiry-label" (click)="onEnquiryFormOpen()"><span>Enquiry</span></div>
+<!-- <div class="enquiry-label" (click)="onEnquiryFormOpen()"><span>Enquiry</span></div> -->
 <!-- Enquiry Form Dialog -->
 
 
 </mat-drawer-content>
 </mat-drawer-container>
+
