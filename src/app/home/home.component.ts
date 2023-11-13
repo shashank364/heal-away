@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { MatDrawer, MatSidenav } from '@angular/material/sidenav';
 import { FirebaseService } from '../firebase.service';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-
+import * as Hammer from 'hammerjs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -80,25 +80,69 @@ introText: string = "Heal Away isn't just a medical travel company; we're your d
 closingText: string = "Choosing Heal Away means entrusting your health and well-being to a team that genuinely cares. We're here to guide you, support you, and ensure your journey towards better health is as smooth and comfortable as possible. Let us take care of the details, so you can focus on what truly matters – your recovery and well-being.";
 
 currentIndex: number = 0;
-  @ViewChild('scrollContainer') scrollContainer!: ElementRef;
+intervalDuration = 5000;
+autoScrollEnabled = true;
+
   @ViewChild('sidenav', { static: true }) sidenav!: MatDrawer;
 
   showScrollButton = true;
   isEnquiryFormOpen = false;
+  isSticky = true;
+
 
   constructor(private dialog: MatDialog,
     private router: Router,
     private route: ActivatedRoute,
-    private fireBaseService:FirebaseService) {
+    private fireBaseService:FirebaseService, private elRef:ElementRef) {
   }
 
-  ngOnInit() {
 
+  // Add a listener for the window scroll event
+  ngOnInit() {
+    this.startAutoScroll();
+  }
+
+  ngAfterViewInit() {
+    this.initHammer();
+  }
+
+  initHammer() {
+    const el = this.elRef.nativeElement.querySelector('.carousel');
+    const hammer = new Hammer(el);
+    
+    hammer.on('swipeleft', () => this.onSwipedLeft());
+    hammer.on('swiperight', () => this.onSwipedRight());
+  }
+
+  startAutoScroll() {
+    setInterval(() => {
+      if (this.autoScrollEnabled) {
+        this.goToNextSlide();
+      }
+    }, this.intervalDuration);
+  }
+
+  goToNextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.items.length;
   }
 
   goToSlide(index: number) {
     this.currentIndex = index;
   }
+
+  onSwipedLeft() {
+    this.goToNextSlide();
+  }
+
+  onSwipedRight() {
+    this.goToPreviousSlide();
+  }
+  
+  goToPreviousSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.items.length) % this.items.length;
+  }
+  
+
 
   onEnquiryFormOpen() {
     const dialogRef = this.dialog.open(EnquryFormComponent, {
@@ -127,10 +171,7 @@ currentIndex: number = 0;
 
   scrollToSection(sectionId: string) {
     const sectionElement = document.getElementById(sectionId);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.router.navigate([], { fragment: sectionId });
-    }
+    this.router.navigate(['specialities'], { queryParams: { section: sectionId } });
   }
   scrollToSpecialities() {
     const specialitiesSection = document.getElementById('specialitiesSection');
@@ -187,11 +228,11 @@ currentIndex: number = 0;
     // Show the button when the user scrolls down
     @HostListener('window:scroll', [])
     onWindowScroll() {
-      const yOffset = window.scrollY;
-      const isLandingPage = window.location.pathname === '/' || window.location.pathname === '/home';
+      // const yOffset = window.scrollY;
+      // const isLandingPage = window.location.pathname === '/' || window.location.pathname === '/home';
 
-      // You can adjust the offset value based on when you want the button to appear
-      this.showScrollButton = !isLandingPage && yOffset > 300;
+      // // You can adjust the offset value based on when you want the button to appear
+      // this.showScrollButton = !isLandingPage && yOffset > 300;
     }
 
 }

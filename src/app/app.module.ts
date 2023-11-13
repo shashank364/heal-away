@@ -26,13 +26,16 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { HomeComponent } from './home/home.component';
+import { SpecialitiesComponent } from './specialities/specialities.component';
+
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     EnquryFormComponent,
     UserDetailsComponent,
-    HomeComponent
-  ],
+    HomeComponent,
+      SpecialitiesComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
